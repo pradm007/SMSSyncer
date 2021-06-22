@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.smssyncer.R;
 import com.example.smssyncer.databinding.FragmentMainBinding;
+import com.example.smssyncer.models.PlaceholderFragmentModel;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -25,8 +26,11 @@ public class PlaceholderFragment extends Fragment {
     private PageViewModel pageViewModel;
     private FragmentMainBinding binding;
 
-    public static PlaceholderFragment newInstance(int index) {
+    public static PlaceholderFragment newInstance(PlaceholderFragmentModel placeholderFragmentModel) {
         PlaceholderFragment fragment = new PlaceholderFragment();
+
+        int index = placeholderFragmentModel.getPlaceholder_fragment_index();
+
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_SECTION_NUMBER, index);
         fragment.setArguments(bundle);

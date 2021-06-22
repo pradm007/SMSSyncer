@@ -2,4 +2,8 @@
     <string name="app_name">SMSSyncer</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="mode_off">Off</string>
+    <string name="mode_push">Push</string>
+    <string name="mode_pull">Pull</string>
+    <string name="placeholder_fragment_index">placeholder_fragment_index</string>
 </resources>
